@@ -22,7 +22,7 @@ st.set_page_config(page_title="Mapa Interativo", layout="wide")
 st.title("📍 Mapa Interativo com Localização Automática e Limitação de Movimento")
 
 # Criando o mapa inicial (ponto arbitrário)
-m = folium.Map(location=[0, 0], zoom_start=5, tiles="cartodbpositron")
+m = folium.Map(location=[0, 0], zoom_start=15, tiles="cartodbpositron")
 
 # Adicionando o controle de localização
 LocateControl(auto_start=True, keepCurrentZoomLevel=True, drawMarker=True).add_to(m)
