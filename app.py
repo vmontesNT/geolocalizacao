@@ -19,7 +19,7 @@ def calculate_bounds(lat, lon, radius_km):
 # Configuração do Streamlit
 st.set_page_config(page_title="Mapa Interativo", layout="wide")
 
-st.title("📍 Mapa Interativo com Localização Automática e Limitação de Movimento")
+st.title("📍 Mapa Interativo com Localização Automática")
 
 # Criando o mapa inicial (ponto arbitrário)
 m = folium.Map(location=[0, 0], zoom_start=15, tiles="cartodbpositron")
